@@ -1,0 +1,21 @@
+%div{ :id => "wrap" }
+  %div{ :class => "container-fluid" }
+    %div{ :class => "row-fluid" }
+      %div{ :class => "span12" }
+        %h1
+          PrimeBOT
+    %div{ :class => "row-fluid" }
+      %div{ :class => "span2" }
+      %div{ :class => "span10" }
+        != @p
+        %br
+        != @q
+        %br
+        != @bbs
+        %br
+        != @result
+%div{ :id => "footer" }
+  %div{ :class => "container" }
+    Ps & Qs from 
+    %a{ :href => "http://primes.utm.edu/lists/small/10000.txt" }
+      primes.um.edu
