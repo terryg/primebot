@@ -30,4 +30,12 @@ class TestCalc < Test::Unit::TestCase
     expected = calc.blum_blum_shub(13, 17, 10)
     assert_not_equal expected, 0
   end
+
+  def test_rand_prime
+    calc = Calc.new
+
+    expected = calc.rand_prime(13, 17, 100)
+    assert_equal expected, 0
+  end
+
 end

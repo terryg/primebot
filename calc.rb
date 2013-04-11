@@ -74,4 +74,15 @@ class Calc
     return bbs
   end
 
+  def rand_prime(p, q, n)
+    bbs = blum_blum_shub(p, q, n)
+    
+    until miller_rabin_pass(bbs, 10)
+      bbs = blum_blum_shub(p, q, n)
+    end
+
+    return bbs
+  end
+
+
 end

@@ -15,14 +15,14 @@ class PrimeBot < Sinatra::Base
     @bbs = 1 if @bbs == 0
     @result = false
 
-    until calc.miller_rabin_pass(@bbs, 10)
-      @bbs = calc.blum_blum_shub(@p.to_i,@q.to_i,n)
-      @bbs = 1 if @bbs == 0
-    end
+  #  until calc.miller_rabin_pass(@bbs, 10)
+  #    @bbs = calc.blum_blum_shub(@p.to_i,@q.to_i,n)
+  #    @bbs = 1 if @bbs == 0
+  #  end
 
-    @result = true
+  #  @result = true
     begin
-      Twitter.update(@bbs)
+   #   Twitter.update(@bbs)
     rescue Exception
       # do nothing
     end
