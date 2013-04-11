@@ -3,6 +3,8 @@ GEM
   specs:
     faraday (0.8.7)
       multipart-post (~> 1.1)
+    haml (4.0.1)
+      tilt
     multi_json (1.7.2)
     multipart-post (1.2.0)
     rack (1.5.2)
@@ -23,5 +25,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   sinatra
   twitter

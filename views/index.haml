@@ -6,7 +6,7 @@
           PrimeBOT
     %div{ :class => "row-fluid" }
       %div{ :class => "span2" }
-      %div{ :class => "span10" }
+      %div{ :class => "span8" }
         != @p
         %br
         != @q
@@ -14,8 +14,11 @@
         != @bbs
         %br
         != @result
+      %div{ :class => "span2" }
 %div{ :id => "footer" }
   %div{ :class => "container" }
     Ps & Qs from 
     %a{ :href => "http://primes.utm.edu/lists/small/10000.txt" }
       primes.um.edu
+    %br
+    @primeautomaton

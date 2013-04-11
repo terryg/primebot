@@ -24,4 +24,10 @@ class TestCalc < Test::Unit::TestCase
     assert_equal expected, true
   end
 
+  def test_blum_blum_shub
+    calc = Calc.new
+
+    expected = calc.blum_blum_shub(13, 17, 10)
+    assert_not_equal expected, 0
+  end
 end
