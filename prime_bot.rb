@@ -11,18 +11,10 @@ class PrimeBot < Sinatra::Base
     n = 100
     
     calc = Calc.new
-    @bbs = calc.blum_blum_shub(@p.to_i,@q.to_i,n)
-    @bbs = 1 if @bbs == 0
-    @result = false
+    @bbs = calc.rand_prime(@p.to_i,@q.to_i,n)
 
-  #  until calc.miller_rabin_pass(@bbs, 10)
-  #    @bbs = calc.blum_blum_shub(@p.to_i,@q.to_i,n)
-  #    @bbs = 1 if @bbs == 0
-  #  end
-
-  #  @result = true
     begin
-   #   Twitter.update(@bbs)
+      Twitter.update(@bbs)
     rescue Exception
       # do nothing
     end

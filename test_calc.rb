@@ -27,8 +27,9 @@ class TestCalc < Test::Unit::TestCase
   def test_blum_blum_shub
     calc = Calc.new
 
-    expected = calc.blum_blum_shub(13, 17, 10)
+    expected = calc.blum_blum_shub(80761, 25867, 100)
     assert_not_equal expected, 0
+    assert_not_equal expected, 1
   end
 
   def test_rand_prime

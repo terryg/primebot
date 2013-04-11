@@ -13,6 +13,7 @@ class Calc
   end
   
   def miller_rabin_pass(n, k)
+    return false if n < 3
     d = n - 1
     s = 0
     while d % 2 == 0 do
@@ -49,8 +50,8 @@ class Calc
 
   def blum_blum_shub(p,q,n)
     nn = p * q
-    
-    s = (10000 * rand()).to_i / nn
+
+    s = (10000000 * rand()).to_i % nn
 
     b = ""
 
