@@ -15,7 +15,7 @@ class PrimesList
 
   def select
     idx = rand(10000)
-    return PRIMES[idx]
+    return PRIMES[idx].to_i
   end
 
   protected
