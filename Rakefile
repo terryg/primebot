@@ -16,17 +16,16 @@ namespace :jobs do
     primes_list = PrimesList.new
     p = primes_list.select
     q = primes_list.select
-    n = 1E+4
+    n = 1E+5
     
     calc = Calc.new
     bbs = calc.rand_prime( p, q, n)
 
-#    begin
+    begin
       Twitter.update(bbs)
-#    rescue Exception
+    rescue Exception
       # do nothing
-#    end
-
+    end
   end
 
 end
