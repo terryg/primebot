@@ -5,12 +5,12 @@
         %h1
           PrimeBOT
     %div{ :class => "row-fluid" }
-      %div{ :class => "span2" }
+      %div{ :class => "span6" }
         %h2
           Recipe
         Use the <a href="http://en.wikipedia.org/wiki/Blum_Blum_Shub">Blum Blum Shub</a> to generate a pseudo-random number.  For this exercise, a bit string of length 100,000 is used.  Check the result with the <a href="http://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test">Miller-Rabin</a> primality test.  If probably prime, Tweet it (via <a href="https://rubygems.org/gems/twitter">gem install twitter</a>).
 
-      %div{ :class => "span10" }
+      %div{ :class => "span6" }
         = File.read(File.join('views', 'twitter.html'))
 %div{ :id => "footer" }
   %div{ :class => "container" }
